@@ -35,7 +35,7 @@ public class BookController {
     public String addBookForm(Model model) {
         model.addAttribute("book", new Book());
         model.addAttribute("categories", categoryService.getAllCategories());
-        return "book/add"
+        return "book/add";
     }
 
     @PostMapping("/add")
