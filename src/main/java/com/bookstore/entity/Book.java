@@ -12,6 +12,7 @@ import lombok.Data;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     @NotBlank(message = "Tiêu đề không được để trống")
